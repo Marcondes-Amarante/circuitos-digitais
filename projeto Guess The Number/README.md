@@ -16,4 +16,4 @@ Quanto às saídas contidas, o circuito main possui cinco, sendo três responsá
 
 O circuito main conta ainda com dois componentes internos responsáveis pelas funcionalidades do game, são eles o conversor_para_o_display e o comb_multicompara, o primeiro presente para cada jogador, recebe como entrada dígitos de valores binários e possui como saídas os valores lógicos, originados de suas operações internas, responsáveis por acender os segmentos de um display encarregado de exibir o valor numérico decimal correspondente a entrada binária fornecida. O segundo por sua vez, dá origem às saídas principais do circuito e recebe diretamente como entrada os valores binários escolhidos pelos jogadores, sendo responsável pela análise comparativa entre estes e o valor pré-fixado alvo da adivinhação, ativando a saída correspondente à condição mais adequada a entrada em relação a este último.
 
-![visão geral do circuito main](https://drive.google.com/file/d/1IXkL6osWscDf0i36JCSQ9YARaWUuO7LT/view?usp=drive_link)
+![visão geral do circuito main](https://drive.google.com/file/d/1IXkL6osWscDf0i36JCSQ9YARaWUuO7LT/view?usp=sharing)
