@@ -7,3 +7,5 @@ O projeto em questão consiste em um jogo local interativo de dois jogadores, si
 # Visão geral do jogo:
 
 O jogo Guess the Number consiste em um jogo de adivinhação onde dois jogadores competem na tentativa de descobrir um número pré-fixado gerado por sequências de 4 bits. Cada jogador efetua seu palpite em rodadas alternadas das quais o jogo fornecerá informações a respeito do palpite fornecido de modo a orientá-los na escolha do número correto (palpite maior, menor ou igual), vence aquele que primeiro descobrir o número fixado, ou seja, efetuar o palpite de número igual ao valor fixado e o circuito retorna como ligado a saída “número igual”.
+
+# Circuito MAIN
