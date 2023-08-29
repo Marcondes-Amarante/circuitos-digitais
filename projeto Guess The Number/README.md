@@ -63,3 +63,5 @@ Por fim, para a saída referente a condição “A menor que B” a estrutura l�
 - A3=B3 A2=B2 A1=B1 A0<B0 (A0=0, B0=1)
 
 Essas expressões booleanas comparativas foram representadas em um circuito combinacional utilizando assim como a seção anteriormente descrita, 4 portas AND, que recebem como entradas dois dígitos a serem comparados constituintes das entradas A e B, estando a primeira negada, além é claro das comparações de igualdade previamente efetuadas em relação às portas AND cujos dígitos analisados possuem dígitos que os precedem (caso 2 em diante), todas as saídas dessas 4 portas AND foram direcionadas a uma porta OR cuja saída é sinalizada por nível lógico alto se umas das portas descritas for verificada como verdadeira (1).
+
+![circuito comparador de magnitude (A menor que B)](https://github.com/Marcondes-Amarante/circuitos-digitais/assets/117780345/20ebf290-d342-44ca-b5d8-26741d2cb24a)
