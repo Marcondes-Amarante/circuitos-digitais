@@ -74,7 +74,7 @@ O conversor para display (decode), aparece em nosso circuito na forma de cátodo
 
 Sendo um símbolo hexadecimal representado pelo display como uma combinação dos comportamentos de acender e apagar de cada um dos seus 7 segmentos, temos que o funcionamento do nosso circuito irá se basear no encadeamento de portas lógicas sobre o intuito de reproduzir tais comportamentos conforme as entradas binárias repassadas. 
 
-Antes de partir para a análise propriamente dita dos trechos de circuito inferidos ao funcionamento individualizado dos segmentos, é necessário destacar que utilizamos como material de apoio à seguinte tabela disposta abaixo, que contempla em suas linhas os valores assumidos pelos dígitos das entradas binárias, seu formato de exibição conferido ao display e o respectivo comportamento assumido pelos segmentos para que a entrada seja exibida como seu equivalente hexadecimal de forma adequada.
+Antes de partir para a análise propriamente dita dos trechos de circuito inferidos ao funcionamento individualizado dos segmentos, é necessário destacar que utilizamos como material de apoio à [seguinte tabela](https://blogdaengenhariacotidiana.blogspot.com/2018/03/display-de-7-segmentos.html) disposta abaixo, que contempla em suas linhas os valores assumidos pelos dígitos das entradas binárias, seu formato de exibição conferido ao display e o respectivo comportamento assumido pelos segmentos para que a entrada seja exibida como seu equivalente hexadecimal de forma adequada.
 
 <img src="https://github.com/Marcondes-Amarante/circuitos-digitais/assets/117780345/97d8090c-b96b-4ec6-97dd-49dbc44c57a4" alt="Texto Alternativo da Imagem" width="50%" HEIGHT="50%">
 
