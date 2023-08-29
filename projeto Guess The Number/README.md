@@ -38,4 +38,28 @@ O destaque aqui vai para a implementação do seletor em associação a uma cone
 
 # Comparador de magnitude:
 
-o comparador de magnitude
+O componente comparador de magnitude, que recebe duas entradas binárias de 4 bits e gera três saídas distintas (igual, maior e menor), é incubido de determinar relações de magnitude comparativa entre as entradas fornecidas enquanto palpites dos jogadores para com o número da constante pré fixado como alvo da adivinhação.
+
+A estruturação do circuito comparador de magnitude é dividida em concordância aos seus tipos de saída possíveis. Para a saída referente a condição A=B, considerando que ambas as entradas são compostas por 4 bits, queremos simular a implicação de igualdade entre o valor de duas entradas, mas especificamente entre seus dígitos internos, logo temos a implementação simulada da função lógica XNOR entre as duas entradas através das portas lógicas básicas AND, OR e NOT, expressas na forma de oito portas AND intercaladas, quatro entre os respectivos dígitos negados de A e B (A0’B0’...A3’B3’), e outras quatro para os respectivos dígitos de A e B (A0B0…A3B3), quatro operações OR, que recebem como entrada as saídas das operações AND (A0’B0’+A0B0…), e por fim uma porta AND que recebe como entradas as saídas das operações OR entre cada um dos dígitos das respectivas entradas (expressas como XOX1X2X3), cuja saída resultante quando em valor lógico alto indica a condição de igualdade entre as entradas.
+
+![circuito comparador de magnitude (A=B)](https://github.com/Marcondes-Amarante/circuitos-digitais/assets/117780345/a1098ed8-6033-4a1c-97ab-cebcb1d43ae9)
+
+Para a saída referente a condição “A maior que B”, a estrutura lógica do circuito se dará sobre a linha de raciocínio comparativa entre os índices de ambas as entradas partindo da esquerda para a direita, ou seja, sobre o sentido A3B3,…,A0B0, onde um dígito da entrada A será maior que um dígito de B se verificado que o dígito de A analisado possui valor lógico alto comparado a B (ex: A0 = 1 e B0= 0), de tal maneira concebe-se 4 possibilidades da entrada A ser maior que B são elas: 
+
+- A3 > B3 (A3=1, B3=0)
+- A3=B3 e A2>B2 (A2=1, B2=0)
+- A3=B3 e A2=B2 e A1>B1 (A1=1, B1=0)
+- A3=B3 A2=B2 A1=B1 e A0>B0. (A0=1, B0=0)
+
+Essas expressões booleanas comparativas foram representadas em um circuito combinacional através de 4 portas lógicas AND que receberam como entrada os dois dígitos a serem comparados, estando o segundo negado, além é claro dos resultados das comparações de igualdades entre os dígitos que os antecedem para os casos a partir de A3=B3 A2>B2, comparações estas que nada mais são que as saídas das portas OR relativas a seção anterior do circuito responsável pela verificação da condição de igualdade, todas as saídas dessas 4 portas AND descritas são direcionadas para uma porta OR cuja saída será assinalada como nível lógico alto caso verificado a veracidade de uma das 4 condições acima.
+
+![circuito comparador de magnitude (A maior que B)](https://github.com/Marcondes-Amarante/circuitos-digitais/assets/117780345/dd205977-8907-419c-b12d-cbd3c2c30409)
+
+Por fim, para a saída referente a condição “A menor que B” a estrutura lógica comparativa empregada ao circuito se dará de forma analogamente semelhante a seção anterior do circuito, os índices constituintes de ambas as entradas continuarão a serem analisados da esquerda para a direita, mas desta vez um dígito da entrada A será menor que um dígito da entrada B quando verificado valor lógico baixo (0) do dígito A e valor lógico alto (1) referente ao dígito B, dessa forma concebemos 4 possibilidades dos dígitos da entrada A serem menores que os dígitos de B, são elas:
+
+- A3<B3 (A3=0, B3=1)
+- A3=B3 A2<B2 (A2=0, B2=1)
+- A3=B3 A2=B2 A1<B1 (A1=0, B1=1)
+- A3=B3 A2=B2 A1=B1 A0<B0 (A0=0, B0=1)
+
+Essas expressões booleanas comparativas foram representadas em um circuito combinacional utilizando assim como a seção anteriormente descrita, 4 portas AND, que recebem como entradas dois dígitos a serem comparados constituintes das entradas A e B, estando a primeira negada, além é claro das comparações de igualdade previamente efetuadas em relação às portas AND cujos dígitos analisados possuem dígitos que os precedem (caso 2 em diante), todas as saídas dessas 4 portas AND foram direcionadas a uma porta OR cuja saída é sinalizada por nível lógico alto se umas das portas descritas for verificada como verdadeira (1).
