@@ -15,5 +15,5 @@ recebe tanto o sinal de 4 bits de A e B, assim como o estado de X referente ao j
 
 Internamente o subcircuito número escolhido é composto por um multiplexador que recebe o número escolhido de A como entrada 0 e o número escolhido de B como entrada 1, além é claro de um seletor que recebe o sinal do estado X, repassando A quando x for 0, e B quando X for 1, esse sinal por sua vez é direcionado a um distribuidor que direciona cada um dos quatro bit a um flip flop d, e tem sua saídas Q conectadas a um distribuidor que direciona os bits armazenados conforme a ativação do clock e do enable ativado pela entrada próximo, a uma saída de 4 bits, isso permite que possamos direcionar o número escolhido correto correspondente ao jogador referente a rodada atual.
 
-![subcircuito número escolhido](https://github.com/Marcondes-Amarante/circuitos-digitais/assets/117780345/ce90b9a5-a3a9-4987-8c54-d81ec997c15a)
+![subcircuito número escolhido](https://github.com/Marcondes-Amarante/circuitos-digitais/issues/12#issue-1998063912)
 
