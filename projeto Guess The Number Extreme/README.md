@@ -19,4 +19,4 @@ Internamente o subcircuito número escolhido é composto por um multiplexador qu
 
 Voltando ao circuito main a saída do subcircuito número escolhido é encaminhada a outro subcircuito chamado ativador de sinal cuja saída aciona um led caso verificado que o número escolhido original ao passar por um negador da origem a um número complementado cujo bit A3 é igual a 1, e o sinal do jogador A ou jogador B é 1, sendo esse sinal originado por dois flip flops D do main, o primeiro referente ao jogador A que tem como clock o sinal do botão chutar e como excitação o sinal originado por um AND entre o estado X negado do jogador e o sinal do bit A3, armazenado 1 caso x seja 0 e o bit A3 seja 1, da mesma forma para B o equivalente ocorre se ambos forem 1.
 
-
+![subcircuito ativador de sinal](https://github.com/Marcondes-Amarante/circuitos-digitais/assets/117780345/cd635293-8cdc-4e57-8269-b4a04a4b05f9)
