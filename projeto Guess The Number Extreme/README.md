@@ -1,6 +1,6 @@
-#Relatório: projeto guess the number extreme
+# Relatório: projeto guess the number extreme
 
-#Descrição do jogo:
+# Descrição do jogo:
 
 Este jogo de adivinhação é uma atividade em que dois jogadores competem para adivinhar um ponto no espaço, representado por coordenadas x e y, cada uma sendo um número de 4 bits escolhido aleatoriamente. Cada jogador terá a oportunidade de fazer um palpite por vez, indicando uma combinação de coordenadas.
 
