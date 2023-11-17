@@ -45,7 +45,7 @@ Vale ressaltar ainda o funcionamento do botão pause e da verificação de quand
 
 # Circuito Core:
 
-![Core]()
+![Core](https://github.com/Marcondes-Amarante/circuitos-digitais/assets/117780345/abf7c3e2-ab9c-415c-8643-a40b97af54cf)
 
 Responsável por analisar e direcionar as principais métricas responsáveis pelo controle do funcionamento do jogo, o circuito em questão possui como entradas o sinal do botão chutar, um sinal de 4 bits referentes às pontuações atuais dos placares correspondentes aos jogadores A e B, os sinais de X e Y enquanto saídas da máquina de estado de transição entre jogadores, e o conjunto de bit referente ao chute de X e Y, e gera como saídas o sinal pontua A, pontua B, vitória A, vitória B, empate, fim de jogo, menor, igual, maior e acertou.
 
