@@ -29,7 +29,7 @@ A segunda seção é composta simplesmente pelo circuito cronômetro devidamente
 
 Por fim a última seção do main é composto pelos leds de indicação de vitória ou empate, e comparação da soma das coordenadas com o ponto oculto, estes últimos ativados ao término de cada rodada, essa seção ainda conta com placares individuais de ambos os jogadores que consistem em contadores atualizados pela saída pontua A e pontua B do circuito core, direcionadas como sinal cont e clock, dos quais a cada sinalização positiva das saídas mencionadas o placar é incrementado em 1, além disso contamos com o circuito core em sua integralidade recebendo todas os sinais e métricas comparativas necessárias para validação e análise das jogadas e condições de vitória. 
  
-![segunda e terceira seção circuito main](https://github.com/Marcondes-Amarante/circuitos-digitais/assets/117780345/52f6ddd0-f094-4fd1-88c6-a80d10aa29e6)
+![segunda e terceira seção circuito main](https://github.com/Marcondes-Amarante/circuitos-digitais/assets/117780345/22a6e1c0-6b55-4b26-ae05-43f0b20e43ea)
 
 # Cronômetro:
 
