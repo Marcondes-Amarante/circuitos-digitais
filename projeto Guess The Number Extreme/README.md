@@ -41,7 +41,7 @@ O conjunto de elementos e componentes de memória descritos acima se repete 4 ve
 
 Vale ressaltar ainda o funcionamento do botão pause e da verificação de quando ambos os dígitos do cronômetro se encontram como zero, o primeiro consiste em um sinal negado conectado a entrada enable de cada flip flop D, que quando acionada direciona sinal 0 e impossibilita o funcionamento do clock. O segundo, por sua vez, consiste em um subcircuito denominado comparador de término que recebe todas as 4 combinações de bit referentes a cada dígito do cronômetro e o sinal do botão clear, internamente cada combinação é comparada com uma constante 0 e todos as saídas remetidas a condição de igualdade são direcionadas a um OR, que emite sinal positivo caso ambos as combinações forem iguais a 1 e o botão clear não se encontre efetivamente ativado.
 
-![cronômetro](https://github.com/Marcondes-Amarante/circuitos-digitais/assets/117780345/6129550b-8a17-4d59-b95f-38e6b298c350)
+![cronômetro](https://github.com/Marcondes-Amarante/circuitos-digitais/assets/117780345/66b65121-0a16-4b98-9808-c28245daab6f)
 
 # Circuito Core:
 
